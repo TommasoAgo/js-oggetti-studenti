@@ -54,6 +54,25 @@ for ( var i = 0; i < arrayStudenti.length; i++ ) {
     console.log(thisStudente.cognome);
 }
 
+// Chiedo all'utente 3 prompt 
+
+// Creo una variabile per ogni valore dato dall'utente
+var nomeUtente = prompt('Inserisci il tuo nome');
+var cognomeUtente = prompt('Inserisci il tuo cognome');
+var etaUtente = parseInt(prompt('Inserisci la tua età'));
+
+// Creo un oggetto 'Studente'
+var nuovoStudente = {
+    'nome' : nomeUtente,
+    'cognome' : cognomeUtente,
+    'eta' : etaUtente
+}
+
+// Pusho il nuovo studente nell'Array della classe
+arrayStudenti.push(nuovoStudente);
+
+console.log(arrayStudenti);
+
 
 
 
